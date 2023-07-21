@@ -40,12 +40,11 @@ body {
 
 .head-elements {
     display: flex;
-    margin-left: 130px;
+    margin-left: 50px;
 }
 
 .head-elements a {
     text-decoration: none;
-    color: rgb(0, 0, 0);
     background: rgba(255, 255, 255);
     border: 1px solid rgba(255, 255, 255);
     box-shadow: 0 0 10px rgba(255, 255, 255);
@@ -53,6 +52,7 @@ body {
     margin-left: 20px;
     margin-right: 10px;
     border-radius: 10px;
+    font-size: 30;
 }
 
 .head-elements a:hover {
