@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    height: 100vh;
+    background: rgb(59, 59, 59);
+}
+
+/* Header Styles */
+.head {
+    top: 0;
+    left: 0;
+    background: rgb(2, 3, 11);
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    height: 25%;
+}
+
+.head-left {
+    margin-left: 10%;
+    display: flex;
+    align-items: center;
+}
+
+
+.head-left h2 {
+    text-transform: uppercase;
+    text-shadow: 0 0 10px whitesmoke;
+    letter-spacing: 0.8rem;
+    font-size: 8rem;
+    color: white;
+}
+
+.head-elements {
+    display: flex;
+    margin-left: 130px;
+}
+
+.head-elements a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    background: rgba(255, 255, 255);
+    border: 1px solid rgba(255, 255, 255);
+    box-shadow: 0 0 10px rgba(255, 255, 255);
+    padding: 30px 60px;
+    margin-left: 20px;
+    margin-right: 10px;
+    border-radius: 10px;
+}
+
+.head-elements a:hover {
+    box-shadow: 0 0 20px rgba(255, 255, 255);
+}
+
+/* Container Styles */
+.container {
+    margin: 7%;
+    margin-top: 40%;
+    background: rgb(255, 255, 255);
+    box-shadow: 0 0 10px rgba(255, 255, 255);
+    border-radius: 10px;
+    padding: 20px;
+    font-size: 35;
+}
+
+.container h3 {
+    text-decoration: underline;
+    font-size: 50;
+}
+
+.container p {
+    margin-left: 2%;
+    margin-top: 2%;
+}
+input {
+    margin: 2%;
+    width: 25px;
+    height: 25px;
+}
+
+/* Third Container Styles */
+.third-container {
+    margin: 7%;
+    background: rgb(0, 0, 0);
+    box-shadow: 0 0 10px black;
+    border-radius: 10px;
+    padding: 20px;
+    color: white;
+    overflow: auto;
+}
+
+.third-container h2 {
+    text-align: center;
+    text-decoration: underline;
+}
+
+.third-container table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 3%;
+}
+
+.third-container td {
+    border: 2px solid whitesmoke;
+    padding: 35px 20px;
+    cursor: pointer;
+    color: white;
+}
+
+.third-container p {
+    font-size: 15px;
+    margin-left: 3%;
+}
+
+.third-container button {
+    padding: 10px 30px;
+    margin: 5%;
+    background: rgb(255, 0, 68);
+    border-radius: 10px;
+    margin-left: 40%;
+    border: transparent;
+    color: white;
+    transition: 0.3s ease-in-out;
+}
+
+.third-container button:hover {
+    background: rgb(255, 255, 255);
+    color: rgb(255, 0, 68);
+    box-shadow: 0 0 10px rgba(255, 0, 68);
+}
+
+.cross-line {
+    text-decoration: line-through;
+    text-decoration-color: rgb(0, 255, 0);
+    text-decoration-thickness: 3px;
+}
+
+/* Second Container Styles */
+.second-container {
+    margin: 7%;
+    background: rgb(255, 255, 255);
+    box-shadow: 0 0 10px rgba(255, 255, 255);
+    border-radius: 10px;
+    padding: 20px;
+    display: block;
+}
+
+.second-container .M_1,
+.second-container .M_2,
+.second-container .M_3,
+.second-container .M_4 {
+    width: 60%;
+    margin-left: 20%;
+    margin-top: 5%;
+    text-align: center;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 30;
+}
+.M_1 {
+    background: lightblue;
+    border: 2px solid darkblue;
+    box-shadow: 0 0 10px darkblue;
+}
+.M_2 {
+    background: lightcoral;
+    border: 2px solid darkred;
+    box-shadow: 0 0 10px darkred;
+}
+.M_3 {
+    background: lightgreen;
+    border: 2px solid darkgreen;
+    box-shadow: 0 0 10px darkgreen;
+}
+.M_4 {
+    background: lightgoldenrodyellow;
+    border: 2px solid yellow;
+    box-shadow: 0 0 10px yellow;
+}
+
+/* To Learn Styles */
+.to_learn {
+    margin-left: 20%;
+    margin-right: 20%;
+    background: rgb(0, 0, 0);
+    border-radius: 10px;
+    color: white;
+    box-shadow: 0 0 10px rgb(255, 255, 255);
+    border: 10px solid whitesmoke;
+    padding: 20px;
+}
+
+.to_learn h2 {
+    position: relative;
+    cursor: pointer;
+    text-align: center;
+    font-size: 60;
+    margin-bottom: 5px;
+    text-shadow: 0 0 10px whitesmoke;
+}
+
+.to_learn h2::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 12%;
+    height: 2px;
+    width: 0;
+    background: white;
+    transition: width 0.3s ease;
+}
+
+.to_learn h2:hover::after {
+    width: 75%;
+}
+
+.to_learn p {
+    margin-left: 5%;
+    font-size: 50; 
+}
+
+/* Footer Styles */
+footer {
+    margin: 5%;
+    display: flex;
+    background: rgb(255, 255, 255);
+    box-shadow: 0 0 10px rgba(255, 255, 255);
+    border-radius: 10px;
+    padding: 20px;
+    font-size: 25;
+}
+
+footer .left-side img {
+    width: 90%;
+    height: 100%;
+}
+
+footer .right-side h2 {
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: underline;
+    text-decoration-color: rgb(255, 162, 0);
+    letter-spacing: 0.5rem;
+    text-shadow: 0 0 10px rgb(0, 0, 0);
+}
+footer p {
+    width: 99%;
+    margin-left: 5%;
+}
+
+
+@media (max-width: 768px) {
+    .head-left h2 {
+        font-size: 1.5rem;
+    }
+    .container {
+        margin: 5%;
+        margin-top: 50%;
+    }
+    .third-container {
+        margin: 5%;
+    }
+    .second-container .M_1,
+    .second-container .M_2,
+    .second-container .M_3,
+    .second-container .M_4 {
+        width: 90%;
+    }
+    .to_learn {
+        width: 100%;
+        margin-left: 0;
+    }
+    footer {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
