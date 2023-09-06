@@ -34,13 +34,11 @@ body {
     text-transform: uppercase;
     text-shadow: 0 0 10px whitesmoke;
     letter-spacing: 0.8rem;
-    font-size: 8rem;
     color: white;
 }
 
 .head-elements {
     display: flex;
-    margin-left: 5%;
 }
 
 .head-elements a {
@@ -58,6 +56,69 @@ body {
 
 .head-elements a:hover {
     box-shadow: 0 0 20px rgba(255, 255, 255);
+}
+
+#wrapper h2 {
+    display: flex;
+    justify-content: center;
+}
+.to-do-container {
+    margin: 7%;
+    height: 500px;
+    width: 400px;
+    color: white;
+    background: #480fe3;
+    justify-content: center;
+    overflow-y: scroll;
+}
+.to-do-container h2 {
+    color: rgb(255, 255, 255);
+    letter-spacing: 1px;
+    font-size: 2rem;
+}
+#input {
+    margin-left: 15px;
+    width: 280px;
+    height: 40px;
+    border-radius: 10px;
+}
+#input:active {
+    border: none;
+}
+#add {
+    cursor: pointer;
+    color: white;
+    background: #F64C72;
+    border: 2px solid #F64C72;
+    padding: 8px 20px;
+    border-radius: 5px;
+}
+#add:hover {
+    border: 2px solid #F64C72;
+    background: transparent;
+    color: #F64C72;
+}
+#todoList {
+    margin-top: 20px;
+}
+#todoList p {
+   position: relative;
+   text-align: center;
+   margin-top: 1%; 
+   margin-left: 5%;
+   margin-right: 5%; 
+   color: rgb(255, 0, 93);
+   background: #fbe6ea;
+   padding: 8px 10px;
+}
+#todoList p::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: #F64C72;
+    padding: 21px 8px;
+    z-index: 1;
 }
 
 /* Container Styles */
@@ -133,7 +194,6 @@ input {
 .third-container table {
     width: 100%;
     border-collapse: collapse;
-    margin: 3%;
 }
 
 .third-container td {
@@ -278,13 +338,21 @@ footer .left-side img {
 }
 
 footer .right-side h2 {
+    margin-top: 2%;
     text-align: center;
     text-transform: uppercase;
     text-decoration: underline;
     text-decoration-color: rgb(255, 162, 0);
     letter-spacing: 0.5rem;
     text-shadow: 0 0 10px rgb(0, 0, 0);
+    font-size: 2rem;
+    background-color: rgba(255, 255, 255, 0.8); 
+    padding: 0.5rem;
+    border: 2px solid rgb(255, 255, 255); 
+    border-radius: 10px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0); 
 }
+
 footer p {
     width: 99%;
     margin-left: 5%;
@@ -295,25 +363,74 @@ footer:hover {
 
 
 @media (max-width: 768px) {
+    .head {
+        height: 22%;
+    }
     .head-left h2 {
-        font-size: 1.5rem;
+        font-size: 3rem;
+    }
+    .head-elements {
+        margin-left: 10%;
+    }
+    .head-elements a {
+        padding: 10px 10px;
+        margin-left: 10px;
+        margin-right: 10px;
+        font-size: 10;
     }
     .container {
         margin: 5%;
         margin-top: 50%;
     }
+    .container h3 {
+       text-decoration: underline;
+       font-size: 30;
+    }
+    .container p {
+       margin-top: 4%;
+       font-size: 14;
+       display: flex;
+    }
+    input {
+       margin: 1%;
+       width: 20px;
+       height: 20px;
+    }
+    .fourth-container {
+        margin: 5%;
+    }
+    .fourth-container h3 {
+       text-decoration: underline;
+       font-size: 30;
+    }
+    .fourth-container p {
+       margin-top: 4%;
+       font-size: 14;
+       display: flex;
+    }
     .third-container {
         margin: 5%;
+    }
+    .third-container td {
+        padding: 10px;
+        margin-left: 1%;
     }
     .second-container .M_1,
     .second-container .M_2,
     .second-container .M_3,
     .second-container .M_4 {
         width: 90%;
+        margin: 5%;
     }
     .to_learn {
-        width: 100%;
-        margin-left: 0;
+        width: 90%;
+        margin: 5%;
+    }
+    .to_learn h2 {
+        font-size: 50;
+    }
+    .to_learn p{
+        font-size: 40;
     }
     footer {
         flex-direction: column;
