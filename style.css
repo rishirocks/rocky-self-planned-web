@@ -63,9 +63,10 @@ body {
     justify-content: center;
 }
 .to-do-container {
+    margin-left: 200px;
     margin: 7%;
-    height: 500px;
-    width: 400px;
+    height: 600px;
+    width: 500px;
     color: white;
     background: #480fe3;
     justify-content: center;
